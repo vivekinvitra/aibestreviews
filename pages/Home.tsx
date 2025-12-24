@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           {CATEGORIES.map((cat) => (
             <Link 
               key={cat.id} 
-              to={`/tools?category=${cat.name}`}
+              to={`/category/${cat.id}`}
               className="group glass bg-gray-50/30 dark:bg-white/5 p-8 rounded-[2.5rem] border-gray-100 dark:border-white/5 hover:border-indigo-500/40 transition-all hover:bg-gray-100/50 dark:hover:bg-white/[0.05]"
             >
               <div className="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform">{cat.icon}</div>

@@ -20,6 +20,7 @@ export interface AITool {
   affiliateUrl: string;
   screenshots: string[];
   alternatives: string[];
+  dateAdded: string; // ISO format
 }
 
 export interface Category {
@@ -27,6 +28,8 @@ export interface Category {
   name: string;
   icon: string;
   description: string;
+  imageUrl: string;
+  pageFeatures: string[];
 }
 
 export interface NewsArticle {

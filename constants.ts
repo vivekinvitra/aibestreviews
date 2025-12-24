@@ -2,12 +2,54 @@
 import { AITool, Category, NewsArticle, Comparison } from './types';
 
 export const CATEGORIES: Category[] = [
-  { id: 'video', name: 'Video Generation', icon: '🎥', description: 'Create professional videos with AI avatars and synthetic media.' },
-  { id: 'writing', name: 'AI Writing', icon: '✍️', description: 'Copywriting, content strategy, and creative writing assistants.' },
-  { id: 'image', name: 'Image & Design', icon: '🎨', description: 'Art generation, photo editing, and brand design assets.' },
-  { id: 'audio', name: 'Audio & Speech', icon: '🎙️', description: 'Voice cloning, text-to-speech, and music generation.' },
-  { id: 'productivity', name: 'Productivity', icon: '🚀', description: 'Meeting assistants, note-taking, and workflow automation.' },
-  { id: 'chatbots', name: 'Chatbots & LLMs', icon: '💬', description: 'Advanced conversational agents and logic engines.' },
+  { 
+    id: 'video', 
+    name: 'Video Generation', 
+    icon: '🎥', 
+    description: 'Create professional videos with AI avatars and synthetic media. Perfect for marketing, training, and scaling content production.',
+    imageUrl: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['AI Avatars', 'Text-to-Video', 'Lip Sync', 'Scene Generation', 'Motion Tracking']
+  },
+  { 
+    id: 'writing', 
+    name: 'AI Writing', 
+    icon: '✍️', 
+    description: 'Elevate your copy with assistants that understand tone, context, and intent. From blog posts to high-converting ad copy.',
+    imageUrl: 'https://images.unsplash.com/photo-1455391727333-e771c53e8392?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['SEO Optimization', 'Plagiarism Detection', 'Tone Adjustment', 'Content Rewriting', 'Multi-language Support']
+  },
+  { 
+    id: 'image', 
+    name: 'Image & Design', 
+    icon: '🎨', 
+    description: 'Transform ideas into visuals instantly. Generate art, edit photos with precision, and automate your brand design workflow.',
+    imageUrl: 'https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['Generative Fill', 'Text-to-Image', 'Background Removal', 'Vectorization', 'Style Transfer']
+  },
+  { 
+    id: 'audio', 
+    name: 'Audio & Speech', 
+    icon: '🎙️', 
+    description: 'Synthetic speech that sounds human. Voice cloning, noise reduction, and automated transcriptions for global creators.',
+    imageUrl: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['Voice Cloning', 'Text-to-Speech', 'Audio Cleanup', 'Dubbing', 'Music Generation']
+  },
+  { 
+    id: 'productivity', 
+    name: 'Productivity', 
+    icon: '🚀', 
+    description: 'Workflow automation and intelligent assistants that reclaim your time. Focus on the work that actually matters.',
+    imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['Email Management', 'Meeting Summaries', 'Project Planning', 'CRM Automation', 'Note Taking']
+  },
+  { 
+    id: 'chatbots', 
+    name: 'Chatbots & LLMs', 
+    icon: '💬', 
+    description: 'The foundation of the AI era. Interact with advanced models for reasoning, coding, and large-scale data analysis.',
+    imageUrl: 'https://images.unsplash.com/photo-1531746790731-6c2079eadbed?q=80&w=2000&auto=format&fit=crop',
+    pageFeatures: ['Complex Reasoning', 'Code Generation', 'Vision Integration', 'Large Context Window', 'Fine-tuning']
+  },
 ];
 
 export const AI_TOOLS: AITool[] = [
@@ -21,8 +63,8 @@ export const AI_TOOLS: AITool[] = [
     reviewCount: 4500,
     price: '$22/mo',
     pricingTier: 'Paid',
-    targetAudience: ['L&D Teams', 'Marketers', 'Enterprises'],
-    features: ['140+ AI Avatars', '120+ Languages', 'AI Video Assistant', 'Custom Avatars'],
+    targetAudience: ['Business', 'L&D Teams', 'Marketers'],
+    features: ['AI Avatars', 'Text-to-Video', 'Multi-language Support', 'Custom Avatars'],
     pros: ['Highly realistic avatars', 'Zero video editing skills required', 'Fast rendering'],
     cons: ['Limited character movement', 'Strict content moderation'],
     useCases: ['Training videos', 'Sales outreach', 'Onboarding'],
@@ -30,6 +72,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://www.synthesia.io',
     screenshots: ['https://picsum.photos/seed/syn1/800/450'],
     alternatives: ['HeyGen', 'Colossyan'],
+    dateAdded: '2023-01-15'
   },
   {
     id: 'canva',
@@ -39,10 +82,10 @@ export const AI_TOOLS: AITool[] = [
     tagline: 'Design for everyone, powered by AI.',
     rating: 4.8,
     reviewCount: 12500,
-    price: 'Freemium',
+    price: 'Free',
     pricingTier: 'Freemium',
-    targetAudience: ['Designers', 'Social Media Managers', 'Small Businesses'],
-    features: ['Magic Edit', 'Magic Media', 'Magic Expand', 'AI Eraser'],
+    targetAudience: ['Designers', 'Small Business', 'Students'],
+    features: ['Text-to-Image', 'Generative Fill', 'Magic Expand', 'AI Eraser'],
     pros: ['Extremely easy to use', 'Massive template library', 'Cross-platform'],
     cons: ['Limited advanced design controls', 'Pro features can be expensive'],
     useCases: ['Social media posts', 'Presentations', 'Marketing materials'],
@@ -50,6 +93,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://www.canva.com',
     screenshots: ['https://picsum.photos/seed/canvass/800/450'],
     alternatives: ['Adobe Express', 'Figma'],
+    dateAdded: '2023-10-01'
   },
   {
     id: 'grammarly',
@@ -59,10 +103,10 @@ export const AI_TOOLS: AITool[] = [
     tagline: 'Responsible AI for work and life.',
     rating: 4.7,
     reviewCount: 55000,
-    price: 'Freemium',
+    price: 'Free',
     pricingTier: 'Freemium',
-    targetAudience: ['Professionals', 'Students', 'Writers'],
-    features: ['Real-time editing', 'Tone detection', 'AI content generation', 'Plagiarism checker'],
+    targetAudience: ['Professionals', 'Students', 'Business'],
+    features: ['Tone Adjustment', 'SEO Optimization', 'Plagiarism Detection', 'Grammar Correction'],
     pros: ['Everywhere you write', 'Accurate grammar engine', 'Helpful tone suggestions'],
     cons: ['Free version is limited', 'Privacy concerns for some industries'],
     useCases: ['Email writing', 'Academic papers', 'Business reports'],
@@ -70,6 +114,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://www.grammarly.com',
     screenshots: ['https://picsum.photos/seed/gramss/800/450'],
     alternatives: ['Jasper', 'Hemingway'],
+    dateAdded: '2023-05-12'
   },
   {
     id: 'descript',
@@ -79,10 +124,10 @@ export const AI_TOOLS: AITool[] = [
     tagline: 'The new way to make video and podcasts.',
     rating: 4.8,
     reviewCount: 3200,
-    price: 'Freemium',
+    price: 'Free',
     pricingTier: 'Freemium',
-    targetAudience: ['Podcasters', 'Video Editors', 'Creators'],
-    features: ['Edit by Text', 'Overdub', 'Eye Contact Correction', 'Studio Sound'],
+    targetAudience: ['Creators', 'Business', 'Developers'],
+    features: ['Text-to-Video', 'Voice Cloning', 'Lip Sync', 'Audio Cleanup'],
     pros: ['Revolutionary editing workflow', 'AI-powered clean up', 'Transcription accuracy'],
     cons: ['Software can be heavy', 'Learning curve for text-based editing'],
     useCases: ['Podcast editing', 'Social video shorts', 'Instructional videos'],
@@ -90,6 +135,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://www.descript.com',
     screenshots: ['https://picsum.photos/seed/desss/800/450'],
     alternatives: ['Riverside', 'Adobe Premiere'],
+    dateAdded: '2022-11-20'
   },
   {
     id: 'chatgpt',
@@ -99,10 +145,10 @@ export const AI_TOOLS: AITool[] = [
     tagline: 'The standard for conversational AI.',
     rating: 4.9,
     reviewCount: 120000,
-    price: 'Freemium',
+    price: 'Free',
     pricingTier: 'Freemium',
-    targetAudience: ['Everyone', 'Developers', 'Writers'],
-    features: ['GPT-4o', 'Advanced Data Analysis', 'Image Generation', 'Vision'],
+    targetAudience: ['Everyone', 'Developers', 'Students'],
+    features: ['Complex Reasoning', 'Code Generation', 'Vision Integration', 'Large Context Window'],
     pros: ['Extremely versatile', 'Large context window', 'Great mobile app'],
     cons: ['Information accuracy issues', 'Usage caps on free tier'],
     useCases: ['Coding', 'Creative writing', 'Research'],
@@ -110,6 +156,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://chat.openai.com',
     screenshots: ['https://picsum.photos/seed/gptss/800/450'],
     alternatives: ['Claude', 'Gemini'],
+    dateAdded: '2022-11-30'
   },
   {
     id: 'jasper',
@@ -121,8 +168,8 @@ export const AI_TOOLS: AITool[] = [
     reviewCount: 8200,
     price: '$39/mo',
     pricingTier: 'Paid',
-    targetAudience: ['Content Teams', 'Agencies', 'Copywriters'],
-    features: ['Brand Voice', 'Campaign Builder', 'SEO Integration', 'Browser Extension'],
+    targetAudience: ['Agencies', 'Business', 'Copywriters'],
+    features: ['Tone Adjustment', 'SEO Optimization', 'Plagiarism Detection', 'Multi-language Support'],
     pros: ['Excellent team collaboration', 'Plagiarism checker included', 'Rich templates'],
     cons: ['Pricey for individuals', 'Output can be repetitive'],
     useCases: ['Blog posts', 'Ad copy', 'Email marketing'],
@@ -130,6 +177,7 @@ export const AI_TOOLS: AITool[] = [
     affiliateUrl: 'https://www.jasper.ai',
     screenshots: ['https://picsum.photos/seed/jasss/800/450'],
     alternatives: ['Copy.ai', 'Writesonic'],
+    dateAdded: '2023-02-14'
   }
 ];
 
