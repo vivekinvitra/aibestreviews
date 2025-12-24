@@ -1,0 +1,8 @@
+{
+  "name": "aiBestReviews - The Ultimate AI Discovery Hub",
+  "description": "Expert reviews and comparisons of the best AI tools, agents, and platforms. Find your next AI advantage with [ABR].",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

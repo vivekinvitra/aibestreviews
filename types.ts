@@ -1,0 +1,52 @@
+
+export type PricingTier = 'Free' | 'Freemium' | 'Paid' | 'Enterprise';
+
+export interface AITool {
+  id: string;
+  name: string;
+  logo: string;
+  category: string;
+  tagline: string;
+  rating: number;
+  reviewCount: number;
+  price: string;
+  pricingTier: PricingTier;
+  targetAudience: string[];
+  features: string[];
+  pros: string[];
+  cons: string[];
+  useCases: string[];
+  description: string;
+  affiliateUrl: string;
+  screenshots: string[];
+  alternatives: string[];
+}
+
+export interface Category {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+}
+
+export interface NewsArticle {
+  id: string;
+  title: string;
+  category: 'Policy' | 'Business' | 'Research' | 'Top Story' | 'Productivity';
+  date: string;
+  author: string;
+  readTime: string;
+  summary: string;
+  content?: string;
+  imageUrl: string;
+  isFeatured?: boolean;
+}
+
+export interface Comparison {
+  id: string;
+  title: string;
+  toolA: string;
+  toolB: string;
+  winner: string;
+  summary: string;
+}
