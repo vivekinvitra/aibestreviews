@@ -73,10 +73,10 @@ const Navbar: React.FC = () => {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
               )}
             </button>
-            <button className="text-gray-500 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white text-sm font-medium hover:underline">Log In</button>
-            <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-indigo-500/20 active:scale-95">
-              Submit Review
-            </button>
+            <Link to="/login" className="text-gray-500 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white text-sm font-medium hover:underline">Log In</Link>
+            <Link to="/submit-tool" className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-indigo-500/20 active:scale-95">
+              Submit Tool
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center gap-2">
@@ -120,8 +120,8 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <div className="pt-4 mt-4 border-t border-gray-100 dark:border-white/10 flex flex-col gap-3">
-              <button className="w-full text-center text-gray-500 dark:text-gray-400 py-3 font-bold">Log In</button>
-              <button className="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold shadow-xl shadow-indigo-500/20">Submit Review</button>
+              <Link to="/login" onClick={() => setIsOpen(false)} className="w-full text-center text-gray-500 dark:text-gray-400 py-3 font-bold">Log In</Link>
+              <Link to="/submit-tool" onClick={() => setIsOpen(false)} className="w-full bg-indigo-600 text-white py-4 rounded-2xl text-center font-bold shadow-xl shadow-indigo-500/20">Submit Tool</Link>
             </div>
           </div>
         </div>

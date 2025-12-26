@@ -10,6 +10,13 @@ import CategoryDetail from './pages/CategoryDetail';
 import Compare from './pages/Compare';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import SubmitTool from './pages/SubmitTool';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
+import Cookies from './pages/Cookies';
+import AffiliateDisclosure from './pages/AffiliateDisclosure';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +32,13 @@ const App: React.FC = () => {
             <Route path="/compare" element={<Compare />} />
             <Route path="/news" element={<News />} />
             <Route path="/news/:category/:id" element={<NewsDetail />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/submit-tool" element={<SubmitTool />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/cookies" element={<Cookies />} />
+            <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
           </Routes>
         </main>
         <Footer />

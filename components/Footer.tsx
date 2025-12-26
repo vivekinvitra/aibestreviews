@@ -30,17 +30,17 @@ const Footer: React.FC = () => {
               <li><Link to="/tools" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Directory</Link></li>
               <li><Link to="/compare" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Comparisons</Link></li>
               <li><Link to="/news" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Insights</Link></li>
-              <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Submit Tool</a></li>
+              <li><Link to="/submit-tool" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Submit Tool</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-gray-900 dark:text-white font-black mb-6 uppercase text-xs tracking-widest">Legal</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Terms</a></li>
-              <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Privacy</a></li>
-              <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Cookies</a></li>
-              <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Affiliate Disclosure</a></li>
+              <li><Link to="/terms" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Terms</Link></li>
+              <li><Link to="/privacy" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Privacy</Link></li>
+              <li><Link to="/cookies" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Cookies</Link></li>
+              <li><Link to="/affiliate-disclosure" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Affiliate Disclosure</Link></li>
             </ul>
           </div>
         </div>
