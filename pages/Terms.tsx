@@ -7,26 +7,55 @@ const Terms: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-32 pb-20 bg-white dark:bg-[#0b0c10] min-h-screen">
+    <div className="pt-40 pb-24 bg-white dark:bg-[#0b0c10] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-10 tracking-tighter">Terms of Service</h1>
-        <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 space-y-6">
-          <p className="text-xl font-light">Last updated: May 20, 2024</p>
-          
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">1. Acceptance of Terms</h2>
-          <p>By accessing and using aiBestReviews ("[ABR]", "we", "us", or "our"), you accept and agree to be bound by the terms and provision of this agreement.</p>
+        <header className="mb-16">
+          <span className="inline-block px-4 py-1 bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 text-[10px] font-black uppercase tracking-widest border border-indigo-600/20 rounded-md mb-6">
+            Legal Framework
+          </span>
+          <h1 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6 tracking-tighter">
+            Terms of Service
+          </h1>
+          <p className="text-gray-500 dark:text-gray-400 text-lg font-light italic">
+            Last updated: May 20, 2024
+          </p>
+        </header>
 
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">2. Use of Content</h2>
-          <p>All content provided on [ABR] is for informational purposes only. The reviews, comparisons, and rankings are the opinions of our editorial board based on our testing methodologies.</p>
+        <div className="prose prose-indigo dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 space-y-10">
+          <section>
+            <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tight mb-4">1. Acceptance of Terms</h2>
+            <p className="leading-relaxed">
+              By accessing, browsing, or utilizing the aiBestReviews platform ("[ABR]"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please discontinue use of the site immediately.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">3. Intellectual Property</h2>
-          <p>The trademarks, logos, and service marks displayed on the site are the property of [ABR] or other third parties. You are not permitted to use these Marks without the prior written consent of [ABR] or such third party which may own the Mark.</p>
+          <section>
+            <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tight mb-4">2. Editorial Integrity & Use of Content</h2>
+            <p className="leading-relaxed">
+              All reviews, rankings, and comparisons on [ABR] are the intellectual property of our editorial team. While we strive for 100% accuracy, AI software changes rapidly. Content is provided "as-is" for informational purposes. Users are encouraged to perform their own due diligence before making purchasing decisions.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">4. User Submissions</h2>
-          <p>When you submit a tool or a review, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and display that content on our platform.</p>
+          <section>
+            <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tight mb-4">3. User Submissions & Tool Listings</h2>
+            <p className="leading-relaxed">
+              When submitting a tool for review, you warrant that the information provided is accurate and that you have the right to represent the software. [ABR] reserves the right to edit descriptions for clarity, SEO optimization, and objectivity.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">5. Disclaimers</h2>
-          <p>The site is provided on an "as is" and "as available" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the site or the information, content, or materials included on the site.</p>
+          <section>
+            <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tight mb-4">4. Intellectual Property Rights</h2>
+            <p className="leading-relaxed">
+              The "ABR" brand, logo, and proprietary benchmarking algorithms are protected by copyright and trademark laws. Unauthorized reproduction of our review data or "Best of" badges without express written permission is strictly prohibited.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase tracking-tight mb-4">5. Limitation of Liability</h2>
+            <p className="leading-relaxed">
+              [ABR] shall not be liable for any damages resulting from the use or inability to use the services, including but not limited to the performance of third-party AI tools discovered through our platform.
+            </p>
+          </section>
         </div>
       </div>
     </div>

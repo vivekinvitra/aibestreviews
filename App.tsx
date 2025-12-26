@@ -17,6 +17,7 @@ import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Cookies from './pages/Cookies';
 import AffiliateDisclosure from './pages/AffiliateDisclosure';
+import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const App: React.FC = () => {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/cookies" element={<Cookies />} />
             <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
