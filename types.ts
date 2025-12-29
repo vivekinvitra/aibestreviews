@@ -53,3 +53,17 @@ export interface Comparison {
   winner: string;
   summary: string;
 }
+
+export interface LegalSection {
+  title?: string;
+  content: string | string[];
+  isCallout?: boolean;
+}
+
+export interface LegalPageData {
+  badge: string;
+  title: string;
+  lastUpdated: string;
+  intro?: string;
+  sections: LegalSection[];
+}

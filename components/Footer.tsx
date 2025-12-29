@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-gray-900 dark:text-white font-black mb-6 uppercase text-xs tracking-widest">Legal</h4>
             <ul className="space-y-4">
-              <li><Link to="/terms" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Terms</Link></li>
-              <li><Link to="/privacy" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Privacy</Link></li>
-              <li><Link to="/cookies" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Cookies</Link></li>
-              <li><Link to="/affiliate-disclosure" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Affiliate Disclosure</Link></li>
+              <li><Link to="/p/terms" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Terms</Link></li>
+              <li><Link to="/p/privacy" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Privacy</Link></li>
+              <li><Link to="/p/cookies" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Cookies</Link></li>
+              <li><Link to="/p/affiliate" className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-500 transition-colors font-medium">Affiliate Disclosure</Link></li>
             </ul>
           </div>
         </div>

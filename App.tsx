@@ -13,10 +13,7 @@ import NewsDetail from './pages/NewsDetail';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import SubmitTool from './pages/SubmitTool';
-import Terms from './pages/Terms';
-import Privacy from './pages/Privacy';
-import Cookies from './pages/Cookies';
-import AffiliateDisclosure from './pages/AffiliateDisclosure';
+import LegalPage from './pages/LegalPage';
 import Contact from './pages/Contact';
 
 const App: React.FC = () => {
@@ -36,11 +33,10 @@ const App: React.FC = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/submit-tool" element={<SubmitTool />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/cookies" element={<Cookies />} />
-            <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Dynamic Legal & Policy Pages */}
+            <Route path="/p/:pageId" element={<LegalPage />} />
+            {/* Catch-all for legacy paths if needed, or simply update footer */}
           </Routes>
         </main>
         <Footer />

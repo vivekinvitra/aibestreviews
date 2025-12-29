@@ -1,5 +1,5 @@
 
-import { AITool, Category, NewsArticle, Comparison } from './types';
+import { AITool, Category, NewsArticle, Comparison, LegalPageData } from './types';
 
 export const CATEGORIES: Category[] = [
   { 
@@ -280,3 +280,102 @@ export const COMPARISONS: Comparison[] = [
     summary: 'Claude 3.5 Sonnet shows superior logical reasoning for complex development tasks.',
   },
 ];
+
+export const LEGAL_CONTENT: Record<string, LegalPageData> = {
+  terms: {
+    badge: "Legal Framework",
+    title: "Terms of Service",
+    lastUpdated: "May 20, 2024",
+    sections: [
+      {
+        title: "1. Acceptance of Terms",
+        content: "By accessing, browsing, or utilizing the aiBestReviews platform (\"[ABR]\"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please discontinue use of the site immediately."
+      },
+      {
+        title: "2. Editorial Integrity & Use of Content",
+        content: "All reviews, rankings, and comparisons on [ABR] are the intellectual property of our editorial team. While we strive for 100% accuracy, AI software changes rapidly. Content is provided \"as-is\" for informational purposes. Users are encouraged to perform their own due diligence before making purchasing decisions."
+      },
+      {
+        title: "3. User Submissions & Tool Listings",
+        content: "When submitting a tool for review, you warrant that the information provided is accurate and that you have the right to represent the software. [ABR] reserves the right to edit descriptions for clarity, SEO optimization, and objectivity."
+      },
+      {
+        title: "4. Intellectual Property Rights",
+        content: "The \"ABR\" brand, logo, and proprietary benchmarking algorithms are protected by copyright and trademark laws. Unauthorized reproduction of our review data or \"Best of\" badges without express written permission is strictly prohibited."
+      },
+      {
+        title: "5. Limitation of Liability",
+        content: "[ABR] shall not be liable for any damages resulting from the use or inability to use the services, including but not limited to the performance of third-party AI tools discovered through our platform."
+      }
+    ]
+  },
+  privacy: {
+    badge: "Data Governance",
+    title: "Privacy Policy",
+    lastUpdated: "May 20, 2024",
+    sections: [
+      {
+        title: "1. Data Collection Disclosure",
+        content: "We collect minimal personal data necessary to provide a personalized experience. This includes email addresses for newsletter subscribers and account holders, and technical data such as IP addresses for security and analytics purposes."
+      },
+      {
+        title: "2. How We Utilize Your Information",
+        content: [
+          "Manage and secure your user account.",
+          "Send requested AI tool updates and industry news.",
+          "Improve site performance via anonymized usage analytics.",
+          "Communicate regarding tool submissions and review status."
+        ]
+      },
+      {
+        title: "3. Security Standards",
+        content: "[ABR] employs industry-standard SSL encryption and secure database protocols to ensure your information remains private. We do not sell or trade your personal data to third parties for marketing purposes."
+      },
+      {
+        title: "4. GDPR & CCPA Compliance",
+        content: "Users residing in the EU or California have specific rights regarding their data, including the right to request access, correction, or deletion. To exercise these rights, please contact our privacy officer."
+      }
+    ]
+  },
+  cookies: {
+    badge: "Tracking Disclosure",
+    title: "Cookie Policy",
+    lastUpdated: "May 20, 2024",
+    intro: "This policy explains how aiBestReviews uses cookies and similar technologies to recognize you when you visit our website.",
+    sections: [
+      {
+        title: "What are cookies?",
+        content: "Cookies are small data files that are placed on your computer or mobile device when you visit a website. They are essential for modern web applications to \"remember\" user preferences and sessions."
+      },
+      {
+        title: "Types of cookies we use",
+        content: [
+          "Essential Cookies: Crucial for security and core site functionality.",
+          "Analytics Cookies: Help us understand which AI tools are trending.",
+          "Functional Cookies: Allow the site to remember your specific filter choices."
+        ]
+      }
+    ]
+  },
+  affiliate: {
+    badge: "Trust & Transparency",
+    title: "Affiliate Disclosure",
+    lastUpdated: "May 20, 2024",
+    intro: "Transparency is the foundation of our editorial integrity. This disclosure is provided to inform you about how aiBestReviews (\"[ABR]\") sustains its deep-dive testing operations.",
+    sections: [
+      {
+        title: "How We Monetize",
+        content: "[ABR] participates in various affiliate marketing programs. This means that we may earn a small commission if you click on a link to an AI tool featured on our site and eventually sign up for a paid subscription. This comes at no additional cost to you."
+      },
+      {
+        title: "Our \"No Bias\" Guarantee",
+        content: "Crucially, our participation in affiliate programs does not influence our scores, rankings, or reviews. Our technical research team and our partnership team operate in strict silos. We rank tools based on actual performance benchmarks.",
+        isCallout: true
+      },
+      {
+        title: "Independent Vetting",
+        content: "We frequently review tools with which we have no financial relationship simply because they are excellent or important to the ecosystem."
+      }
+    ]
+  }
+};
