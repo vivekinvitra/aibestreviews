@@ -67,3 +67,34 @@ export interface LegalPageData {
   intro?: string;
   sections: LegalSection[];
 }
+
+export interface NavLink {
+  name: string;
+  path: string;
+}
+
+export interface FooterSection {
+  title: string;
+  links: { label: string; path: string }[];
+}
+
+export interface AppStore {
+  navigation: {
+    main: NavLink[];
+    categories: { id: string; name: string }[];
+  };
+  footer: {
+    about: {
+      brand: string;
+      badge: string;
+      tagline: string;
+    };
+    sections: FooterSection[];
+    socials: { platform: string; icon: string; url: string }[];
+    copyright: string;
+  };
+  categories: Category[];
+  tools: AITool[];
+  news: NewsArticle[];
+  legal: Record<string, LegalPageData>;
+}

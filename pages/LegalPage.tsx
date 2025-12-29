@@ -1,11 +1,11 @@
 
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { LEGAL_CONTENT } from '../constants';
+import { ContentService } from '../services/contentService';
 
 const LegalPage: React.FC = () => {
   const { pageId } = useParams<{ pageId: string }>();
-  const data = pageId ? LEGAL_CONTENT[pageId] : null;
+  const data = pageId ? ContentService.getLegalPage(pageId) : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
