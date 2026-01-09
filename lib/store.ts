@@ -224,7 +224,7 @@ export const APP_STORE: AppStore = {
   ],
   news: [
     {
-      id: 'n1',
+      id: 'the-generative-ai-revolution-how-its-transforming-global-markets',
       title: 'The Generative AI Revolution: How It’s Transforming Global Markets',
       category: 'Top Story',
       date: 'May 12, 2024',
@@ -236,7 +236,7 @@ export const APP_STORE: AppStore = {
       isFeatured: true,
     },
     {
-      id: 'n2',
+      id: 'synthesia-2-0-moving-beyond-talking-heads',
       title: 'Synthesia 2.0: Moving Beyond Talking Heads',
       category: 'Research',
       date: 'May 10, 2024',
@@ -247,7 +247,7 @@ export const APP_STORE: AppStore = {
       imageUrl: 'https://picsum.photos/seed/syn2/600/400',
     },
     {
-      id: 'n3',
+      id: 'the-eu-ai-act-a-final-compliance-guide-for-startups',
       title: 'The EU AI Act: A Final Compliance Guide for Startups',
       category: 'Policy',
       date: 'May 08, 2024',

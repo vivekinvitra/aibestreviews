@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -18,8 +18,8 @@ import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
-      <div className="min-h-screen flex flex-col selection:bg-indigo-600 selection:text-white bg-white dark:bg-[#0b0c10] transition-colors duration-300">
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col bg-white dark:bg-[#0b0c10] text-gray-900 dark:text-gray-200 transition-colors duration-300">
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -41,7 +41,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 

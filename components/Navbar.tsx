@@ -4,8 +4,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { ContentService } from '../services/contentService';
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);  
+  const [isDark, setIsDark] = useState(
+    document.documentElement.classList.contains('dark')
+  );
   const location = useLocation();
 
   const navData = ContentService.getNavbarData();
@@ -61,8 +63,8 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center gap-4">
             <button 
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/5 text-gray-500 dark:text-gray-400 transition-colors"
-              aria-label="Toggle Theme"
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition"
+              aria-label="Toggle theme"
             >
               {isDark ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.243 17.657l.707.707M7.757 6.343l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
