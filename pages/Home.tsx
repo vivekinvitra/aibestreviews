@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-24 relative">
         <div className="absolute top-[-150px] left-1/2 transform -translate-x-1/2 w-[1000px] h-[500px] bg-indigo-600/5 dark:bg-indigo-600/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-widest mb-8 animate-pulse">
-          🏆 Verified AI Reviews 2024
+          🏆 Verified AI Reviews 2026
         </div>
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-gray-900 dark:text-white mb-8 leading-[0.9]">
           The Authority on <br /><span className="gradient-text">AI Software</span>

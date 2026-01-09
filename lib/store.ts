@@ -227,7 +227,7 @@ export const APP_STORE: AppStore = {
       id: 'the-generative-ai-revolution-how-its-transforming-global-markets',
       title: 'The Generative AI Revolution: How It’s Transforming Global Markets',
       category: 'Top Story',
-      date: 'May 12, 2024',
+      date: 'May 12, 2026',
       author: 'Alex River',
       readTime: '8 min read',
       summary: 'From automated coding to creative arts, the adoption of generative models is projected to add trillions to the global economy by 2030.',
@@ -239,7 +239,7 @@ export const APP_STORE: AppStore = {
       id: 'synthesia-2-0-moving-beyond-talking-heads',
       title: 'Synthesia 2.0: Moving Beyond Talking Heads',
       category: 'Research',
-      date: 'May 10, 2024',
+      date: 'May 10, 2026',
       author: 'Sarah Chen',
       readTime: '5 min read',
       summary: 'The latest update from Synthesia introduces full-body movement and nuanced emotional cues in AI avatars.',
@@ -250,7 +250,7 @@ export const APP_STORE: AppStore = {
       id: 'the-eu-ai-act-a-final-compliance-guide-for-startups',
       title: 'The EU AI Act: A Final Compliance Guide for Startups',
       category: 'Policy',
-      date: 'May 08, 2024',
+      date: 'May 08, 2026',
       author: 'Marcus Thorne',
       readTime: '12 min read',
       summary: 'Navigating the complex requirements of the worlds first comprehensive AI regulation.',
@@ -262,7 +262,7 @@ export const APP_STORE: AppStore = {
     terms: {
       badge: "Legal Framework",
       title: "Terms of Service",
-      lastUpdated: "May 20, 2024",
+      lastUpdated: "May 20, 2026",
       sections: [
         {
           title: "1. Acceptance of Terms",
@@ -273,7 +273,7 @@ export const APP_STORE: AppStore = {
     privacy: {
       badge: "Data Governance",
       title: "Privacy Policy",
-      lastUpdated: "May 20, 2024",
+      lastUpdated: "May 20, 2026",
       sections: [
         {
           title: "1. Data Collection Disclosure",
@@ -284,7 +284,7 @@ export const APP_STORE: AppStore = {
     cookies: {
       badge: "Tracking Disclosure",
       title: "Cookie Policy",
-      lastUpdated: "May 20, 2024",
+      lastUpdated: "May 20, 2026",
       intro: "This policy explains how aiBestReviews uses cookies and similar technologies.",
       sections: [
         {
@@ -296,7 +296,7 @@ export const APP_STORE: AppStore = {
     affiliate: {
       badge: "Trust & Transparency",
       title: "Affiliate Disclosure",
-      lastUpdated: "May 20, 2024",
+      lastUpdated: "May 20, 2026",
       intro: "Transparency is the foundation of our editorial integrity.",
       sections: [
         {
