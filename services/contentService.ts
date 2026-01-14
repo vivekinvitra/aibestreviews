@@ -1,5 +1,5 @@
 
-import { APP_STORE } from '../lib/store';
+import { APP_STORE } from '../lib/store.ts';
 
 export const ContentService = {
   getNavbarData: () => APP_STORE.navigation,
