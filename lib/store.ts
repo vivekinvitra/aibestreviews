@@ -1,5 +1,5 @@
 
-import { AppStore } from '../types';
+import type { AppStore } from '../types.ts';
 
 export const APP_STORE: AppStore = {
   navigation: {
