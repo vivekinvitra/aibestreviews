@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { APP_STORE } from '../lib/store.ts';
+import { APP_STORE } from '../lib/store.js';
 
 const BASE_URL = 'https://aibestreviews.com';
 
-function url(loc: string, priority = '0.7', changefreq = 'weekly') {
+function url(loc, priority = '0.7', changefreq = 'weekly') {
   return `
   <url>
     <loc>${BASE_URL}${loc}</loc>
@@ -13,7 +13,7 @@ function url(loc: string, priority = '0.7', changefreq = 'weekly') {
   </url>`;
 }
 
-const urls: string[] = [];
+const urls = [];
 
 /* ---------- Static pages ---------- */
 urls.push(url('/', '1.0', 'daily'));

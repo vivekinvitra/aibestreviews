@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "generate:sitemap": "ts-node --esm scripts/generate-sitemap.ts",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
     "build": "npm run generate:sitemap && vite build"
   },
   "dependencies": {
