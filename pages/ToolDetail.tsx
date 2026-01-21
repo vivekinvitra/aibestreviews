@@ -126,7 +126,9 @@ const ToolDetail: React.FC = () => {
                 <div className="animate-fade-in space-y-12">
                   <section>
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Deep Dive Analysis</h2>
-                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg font-light mb-8 whitespace-pre-line">{tool.description}</p>
+                    <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed text-lg font-light mb-8 whitespace-pre-line"
+                      dangerouslySetInnerHTML={{ __html: tool?.description ?? "" }}
+                    />
                   </section>
                   
                   <section>
