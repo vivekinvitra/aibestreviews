@@ -128,6 +128,36 @@
   </url>
 
   <url>
+    <loc>https://aibestreviews.com/tool/claude</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/tool/gemini</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/tool/midjourney</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/tool/elevenlabs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/tool/github-copilot</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://aibestreviews.com/tool/canva</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -327,6 +357,66 @@
 
   <url>
     <loc>https://aibestreviews.com/news/policy/the-eu-ai-act-a-final-compliance-guide-for-startups</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/top-story/openai-announces-gpt-5-with-multimodal-reasoning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/research/anthropic-claude-4-sets-new-benchmark-for-ai-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/business/google-gemini-20-ultra-beats-gpt-5-on-coding-benchmarks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/research/ai-healthcare-breakthrough-early-cancer-detection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/productivity/github-copilot-workspace-autonomous-coding-agent</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/research/deepfake-detection-ai-arms-race-intensifies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/research/ai-tutors-outperform-human-teachers-landmark-study</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/top-story/quantum-ai-chip-breakthrough-google-willow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/business/midjourney-v7-photorealistic-ai-art-indistinguishable</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aibestreviews.com/news/policy/ai-energy-crisis-datacenters-consuming-4-percent-global-power</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
