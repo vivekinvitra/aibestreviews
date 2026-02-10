@@ -7,7 +7,8 @@
     "dev": "vite",
     "preview": "vite preview",
     "generate:sitemap": "node scripts/generate-sitemap.js",
-    "build": "npm run generate:sitemap && vite build && node scripts/prerender.js"
+    "build": "npm run generate:sitemap && vite build && node scripts/prerender.js",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "dependencies": {
     "react": "^19.2.3",
