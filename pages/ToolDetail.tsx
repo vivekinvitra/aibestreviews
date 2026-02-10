@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AI_TOOLS } from '../constants';
 import { AITool } from '../types';
+import SEOHead from '../components/SEOHead';
+import { generateToolSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const ToolDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -13,48 +15,31 @@ const ToolDetail: React.FC = () => {
     const found = AI_TOOLS.find(t => t.id === id);
     if (found) {
       setTool(found);
-      
-      const schemaId = 'tool-schema-jsonld';
-      let script = document.getElementById(schemaId) as HTMLScriptElement;
-      if (!script) {
-        script = document.createElement('script');
-        script.id = schemaId;
-        script.type = 'application/ld+json';
-        document.head.appendChild(script);
-      }
-
-      const schemaData = {
-        "@context": "https://schema.org/",
-        "@type": "SoftwareApplication",
-        "name": found.name,
-        "operatingSystem": "Web-based",
-        "applicationCategory": found.category === 'Video Generation' ? 'MultimediaApplication' : 'BusinessApplication',
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": found.rating.toString(),
-          "ratingCount": found.reviewCount.toString()
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": found.price.replace(/[^0-9.]/g, '') || "0",
-          "priceCurrency": "USD"
-        }
-      };
-
-      script.text = JSON.stringify(schemaData);
     }
     window.scrollTo(0, 0);
-
-    return () => {
-      const script = document.getElementById('tool-schema-jsonld');
-      if (script) script.remove();
-    };
   }, [id]);
 
   if (!tool) return <div className="pt-40 text-center h-screen text-gray-900 dark:text-white">Loading tool details...</div>;
 
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://aibestreviews.com/' },
+    { name: 'Directory', url: 'https://aibestreviews.com/tools' },
+    { name: tool.name, url: `https://aibestreviews.com/tool/${tool.id}` }
+  ]);
+
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="pt-28 pb-20 transition-colors duration-300">
+    <>
+      <SEOHead
+        title={`${tool.name} Review ${currentYear} | ${tool.tagline}`}
+        description={`Expert review of ${tool.name}: ${tool.tagline}. Rating: ${tool.rating}/5 from ${tool.reviewCount} reviews. Pricing starts at ${tool.price}. ${tool.pros.slice(0, 2).join('. ')}.`}
+        canonical={`https://aibestreviews.com/tool/${tool.id}`}
+        image={tool.logo}
+        type="product"
+        schema={[generateToolSchema(tool), breadcrumbs]}
+      />
+      <div className="pt-28 pb-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-sm text-gray-400 dark:text-gray-500 mb-8 font-medium">
@@ -299,6 +284,7 @@ const ToolDetail: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

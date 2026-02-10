@@ -2,6 +2,8 @@
 import React, { useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { NEWS } from '../constants';
+import SEOHead from '../components/SEOHead';
+import { generateArticleSchema } from '../utils/seo';
 
 const NewsDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -22,8 +24,19 @@ const NewsDetail: React.FC = () => {
     );
   }
 
+  const categorySlug = article.category.toLowerCase().replace(/\s+/g, '-');
+
   return (
-    <div className="pt-32 pb-20 transition-colors duration-300 min-h-screen bg-white dark:bg-[#0b0c10]">
+    <>
+      <SEOHead
+        title={`${article.title} | aiBestReviews`}
+        description={article.summary}
+        canonical={`https://aibestreviews.com/news/${categorySlug}/${article.id}`}
+        image={article.imageUrl}
+        type="article"
+        schema={generateArticleSchema(article)}
+      />
+      <div className="pt-32 pb-20 transition-colors duration-300 min-h-screen bg-white dark:bg-[#0b0c10]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumbs */}
@@ -157,6 +170,7 @@ const NewsDetail: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
