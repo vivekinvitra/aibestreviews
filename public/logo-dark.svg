@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <!-- Primary brand gradient -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <!-- Icon background gradient -->
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: AI Shield/Badge shape -->
+  <g transform="translate(6, 8)">
+    <!-- Shield background -->
+    <path d="M8 4 L36 4 Q40 4 40 8 L40 32 Q40 44 24 50 Q8 44 8 32 Z"
+          fill="url(#iconBg)" rx="4"/>
+
+    <!-- AI Neural nodes inside shield -->
+    <circle cx="24" cy="22" r="4" fill="none" stroke="white" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="24" cy="22" r="1.5" fill="white" opacity="0.95"/>
+    <circle cx="24" cy="11" r="2.5" fill="none" stroke="white" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="24" cy="11" r="1" fill="white" opacity="0.8"/>
+    <circle cx="24" cy="36" r="2.5" fill="none" stroke="white" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="24" cy="36" r="1" fill="white" opacity="0.8"/>
+    <circle cx="13" cy="28" r="2.5" fill="none" stroke="white" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="13" cy="28" r="1" fill="white" opacity="0.8"/>
+    <circle cx="35" cy="28" r="2.5" fill="none" stroke="white" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="35" cy="28" r="1" fill="white" opacity="0.8"/>
+    <circle cx="13" cy="14" r="2" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+    <circle cx="13" cy="14" r="0.8" fill="white" opacity="0.6"/>
+    <circle cx="35" cy="14" r="2" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+    <circle cx="35" cy="14" r="0.8" fill="white" opacity="0.6"/>
+
+    <!-- Connection lines -->
+    <line x1="24" y1="18" x2="24" y2="13.5" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="24" y1="26" x2="24" y2="33.5" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="20.5" y1="24" x2="15.5" y2="27" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="27.5" y1="24" x2="32.5" y2="27" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="21" y1="19.5" x2="15" y2="15.5" stroke="white" stroke-width="0.8" opacity="0.35"/>
+    <line x1="27" y1="19.5" x2="33" y2="15.5" stroke="white" stroke-width="0.8" opacity="0.35"/>
+    <line x1="13" y1="16" x2="13" y2="25.5" stroke="white" stroke-width="0.8" opacity="0.3"/>
+    <line x1="35" y1="16" x2="35" y2="25.5" stroke="white" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- Star sparkle accent -->
+    <g transform="translate(37, 6)" opacity="0.9">
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-2.5" y1="-2.5" x2="2.5" y2="2.5" stroke="#f472b6" stroke-width="1" stroke-linecap="round"/>
+      <line x1="2.5" y1="-2.5" x2="-2.5" y2="2.5" stroke="#f472b6" stroke-width="1" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Text: "ai" in gradient -->
+  <text x="62" y="44" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="30" fill="url(#brandGradient)" letter-spacing="-0.5">
+    ai
+  </text>
+
+  <!-- Text: "BestReviews" in white for dark mode -->
+  <text x="97" y="44" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="30" fill="#f1f5f9" letter-spacing="-0.5">
+    BestReviews
+  </text>
+
+  <!-- Tagline -->
+  <text x="63" y="60" font-family="'Inter', sans-serif" font-weight="500" font-size="10" fill="#a5b4fc" letter-spacing="3" opacity="0.8">
+    THE AUTHORITY ON AI
+  </text>
+
+  <!-- Subtle gradient underline accent -->
+  <rect x="62" y="48" width="80" height="2" rx="1" fill="url(#brandGradient)" opacity="0.4"/>
+</svg>

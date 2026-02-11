@@ -34,11 +34,12 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-12 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white text-sm group-hover:scale-110 transition-transform shadow-lg shadow-indigo-500/20">ABR</div>
-              <span className="text-xl font-extrabold tracking-tight text-gray-900 dark:text-white font-heading">
-                ai<span className="text-indigo-500">BestReviews</span>
-              </span>
+            <Link to="/" className="flex items-center group">
+              <img
+                src={isDark ? "/logo-dark.svg" : "/logo.svg"}
+                alt="aiBestReviews"
+                className="h-12 w-auto group-hover:scale-105 transition-transform"
+              />
             </Link>
           </div>
           
