@@ -31,12 +31,12 @@ APP_STORE.footer.sections.forEach(section => {
 
 /* ---------- Categories ---------- */
 APP_STORE.categories.forEach(cat => {
-  urls.push(url(`/category/${cat.id}`, '0.8'));
+  urls.push(url(`/category/${cat.id}`, '0.9'));
 });
 
 /* ---------- Tools ---------- */
 APP_STORE.tools.forEach(tool => {
-  urls.push(url(`/tool/${tool.id}`, '0.8'));
+  urls.push(url(`/tool/${tool.id}`, '0.9', 'daily'));
 });
 
 /* ---------- News ---------- */
@@ -46,7 +46,7 @@ APP_STORE.news.forEach(article => {
     .replace(/\s+/g, '-');
 
   urls.push(
-    url(`/news/${categorySlug}/${article.id}`, '0.7', 'monthly')
+    url(`/news/${categorySlug}/${article.id}`, '0.9', 'daily')
   );
 });
 
