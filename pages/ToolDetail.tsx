@@ -7,7 +7,7 @@ import SEOHead from '../components/SEOHead';
 import { generateToolSchema, generateBreadcrumbSchema } from '../utils/seo';
 
 const ToolDetail: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
   const [tool, setTool] = useState<AITool | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
 
@@ -34,7 +34,7 @@ const ToolDetail: React.FC = () => {
       <SEOHead
         title={`${tool.name} Review ${currentYear} | ${tool.tagline}`}
         description={`Expert review of ${tool.name}: ${tool.tagline}. Rating: ${tool.rating}/5 from ${tool.reviewCount} reviews. Pricing starts at ${tool.price}. ${tool.pros.slice(0, 2).join('. ')}.`}
-        canonical={`https://aibestreviews.com/tool/${tool.id}`}
+        canonical={`https://aibestreviews.com/tool/${tool.id}/`}
         image={tool.logo}
         type="product"
         schema={[generateToolSchema(tool), breadcrumbs]}
